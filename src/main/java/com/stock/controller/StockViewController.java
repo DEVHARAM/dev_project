@@ -7,4 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/")
 public class StockViewController {
 
+	@RequestMapping(value="/")
+	public String viewMain(){
+		return "main";
+	}
 }
